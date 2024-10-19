@@ -92,27 +92,50 @@ BiGR supports various zero-shot generalized applications, without the need for t
 You can easily download [testing images](https://drive.google.com/drive/folders/1GuKXolM90nRoNpg71g0ys4tv2ZCkAq9U?usp=sharing) and run our scripts to get started. Feel free to play with your own images.
 
 ### Inpainting & Outpainting
+<p align="left">
+    <img src='src/in_outpaint.png' width="90%">
+</p>
+
 ```
 bash script/app_inpaint.sh
 ```
 ```
 bash script/app_outpaint.sh
 ```
+You need to save the source image and the mask in the same folder, with the image as a `*.JPEG` file and the mask as a `*.png` file. 
+You can then specify the source image path `$IMG`.
+
+You can customize masks using this [gradio demo](gradio/README.md).
 
 ### Class-conditional editting
+<p align="left">
+    <img src='src/edit.png' width="90%">
+</p>
+
 ```
 bash script/app_edit.sh
 ```
+In addition to the source image path `$IMG`, you also need to give a class index `$CLS` for editing.
 
 ### Class interpolation
+<p align="left">
+    <img src='src/interpolate.png' width="90%">
+</p>
+
 ```
 bash script/app_interpolate.sh
 ```
+You need to specify two class indices `$CLS1` and `$CLS2`.
 
 ### Image enrichment
+<p align="left">
+    <img src='src/enrich.png' width="90%">
+</p>
+
 ```
 bash script/app_enrich.sh
 ```
+You need to specify the source image path `$IMG`.
 
 ## 💻 Train
 You can train BiGR yourself by running:
