@@ -147,6 +147,6 @@ You need to specify the ImageNet-1K dataset path `--data-path`.
 We train L/XL-sized models using 8 A800 GPUs and XXL-sized models using 32 A800 GPUs on 4 nodes.
 
 ## 💐 Acknowledgement
-This project builds on [Diffusion Transformer](https://github.com/facebookresearch/DiT), [Binary Latent Diffusion](https://github.com/ZeWang95/BinaryLatentDiffusion), and [LlamaGen](https://github.com/FoundationVision/LlamaGen). We appreciate these great works!
+This project builds on [Diffusion Transformer](https://github.com/facebookresearch/DiT), [Binary Latent Diffusion](https://github.com/ZeWang95/BinaryLatentDiffusion), and [LlamaGen](https://github.com/FoundationVision/LlamaGen). We thank these great works!
 
 ## 📖 Citation
