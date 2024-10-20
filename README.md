@@ -150,4 +150,4 @@ We train L/XL-sized models using 8 A800 GPUs and XXL-sized models using 32 A800 
 ## 💐 Acknowledgement
 This project builds on [Diffusion Transformer](https://github.com/facebookresearch/DiT), [Binary Latent Diffusion](https://github.com/ZeWang95/BinaryLatentDiffusion), and [LlamaGen](https://github.com/FoundationVision/LlamaGen). We thank these great works!
 
-## 📖 Citation
+<!-- ## 📖 Citation -->
