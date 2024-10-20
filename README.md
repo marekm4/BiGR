@@ -1,7 +1,7 @@
 # BiGR: Harnessing Binary Latent Codes for Image Generation and Improved Visual Representation Capabilities
 
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-2407.07077%20-b31b1b)]() -->
 [![Project Page](https://img.shields.io/badge/Webpage-0054a6?logo=Google%20chrome&logoColor=white)](https://haoosz.github.io/BiGR/)
-[![arXiv](https://img.shields.io/badge/arXiv-2407.07077%20-b31b1b)]()
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BiGR-blue)](https://huggingface.co/haoosz/BiGR)
 ![License](https://img.shields.io/github/license/haoosz/ConceptExpress?color=lightgray)
 
