@@ -1,12 +1,6 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
+# Modified from:
+#   DiT:      https://github.com/facebookresearch/DiT/blob/main/sample.py
 
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-
-"""
-Sample new images from a pre-trained DiT.
-"""
 import torch
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True

@@ -1,12 +1,7 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
+# Modified from:
+#   DiT:      https://github.com/facebookresearch/DiT/blob/main/train.py
+#   LlamaGen: https://github.com/FoundationVision/LlamaGen/blob/main/autoregressive/train/train_c2i.py
 
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-
-"""
-A minimal training script for DiT using PyTorch DDP.
-"""
 import torch
 # the first flag bteelow was False when we sted this script but True makes A100 training a lot faster:
 torch.backends.cuda.matmul.allow_tf32 = True

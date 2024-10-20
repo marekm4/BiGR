@@ -1,10 +1,7 @@
 # Modified from:
-#   VQGAN:    https://github.com/CompVis/taming-transformers/blob/master/taming/modules/transformer/mingpt.py
 #   DiT:      https://github.com/facebookresearch/DiT/blob/main/models.py  
-#   nanoGPT:  https://github.com/karpathy/nanoGPT/blob/master/model.py
-#   llama:    https://github.com/facebookresearch/llama/blob/main/llama/model.py
-#   gpt-fast: https://github.com/pytorch-labs/gpt-fast/blob/main/model.py
-#   PixArt:   https://github.com/PixArt-alpha/PixArt-alpha/blob/master/diffusion/model/nets/PixArt_blocks.py
+#   LlamaGen: https://github.com/FoundationVision/LlamaGen/blob/main/autoregressive/models/gpt.py
+
 from dataclasses import dataclass
 from typing import Optional, List
 
