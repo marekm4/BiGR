@@ -66,7 +66,7 @@ We provide pretrained weights for BiGR models in various sizes.
 | BiGR-XXL-d24       |  d24  | 5.92G |  [download](https://huggingface.co/haoosz/BiGR/resolve/main/gpt/bigr_XXL_d24.pt?download=true)   |
 | BiGR-XXL-d32       |  d32  | 5.92G |  [download](https://huggingface.co/haoosz/BiGR/resolve/main/gpt/bigr_XXL_d32.pt?download=true)   |
 
-**BiGR - 512x512 resolution**
+**512x512 resolution**
 
 | Model              | B-AE        | Size  | Checkpoint |
 | :----------------- | :---------: | :---: | :--------: |
