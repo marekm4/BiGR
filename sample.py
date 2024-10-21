@@ -31,15 +31,13 @@ def sample_func(model, bae, save, args, seed=0, image_size=256, num_classes=1000
     
     # Labels to condition the model with (feel free to change):
     class_labels = [207, 360, 387, 974, 88, 979, 417, 279]
-        
-    # Create sampling noise:
+    
     n = len(class_labels)
     y = torch.tensor(class_labels, device=device)
     
     bs = y.shape[0]
-    # Setup classifier-free guidance:
+    
     start_time = time()
-
     samples = model.generate_with_cfg(cond=y, max_new_tokens=latent_size ** 2, cond_padding=args.cls_token_num, num_iter=args.num_sample_iter,
                     out_dim=bae.codebook_size, cfg_scale=args.cfg_scale, cfg_schedule=args.cfg_schedule,
                     gumbel_temp=args.gumbel_temp, gumbel_schedule=args.gumbel_schedule, sample_logits=True, proj_emb=None)
