@@ -90,7 +90,7 @@ def main(args, args_ae):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="GPT-L")
+    parser.add_argument("--model", type=str, default="BiGR-L")
     parser.add_argument("--image-size", type=int, choices=[256, 512], default=256)
     parser.add_argument("--num-classes", type=int, default=1000)
     parser.add_argument("--ckpt", type=str, default=None,
