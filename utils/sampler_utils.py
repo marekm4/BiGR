@@ -15,7 +15,6 @@ def get_sampler(H, embedding_weight):
 
     if H.sampler == 'bld':
         denoise_fn = TransformerBD(H).cuda()
-        print(denoise_fn)
         sampler = BinaryDiffusion(
             H, denoise_fn, H.codebook_size, embedding_weight)
     else:

@@ -12,7 +12,7 @@ from time import time
 from glob import glob
 
 from hparams import get_vqgan_hparams
-from bae.binaryae import BinaryGAN, BinaryAutoEncoder, load_pretrain
+from bae.binaryae import BinaryAutoEncoder, load_pretrain
 from llama.load_bigr import load_bigr
 
 def sample_func(model, bae, save, args, seed=0, image_size=256, num_classes=1000):
@@ -31,15 +31,13 @@ def sample_func(model, bae, save, args, seed=0, image_size=256, num_classes=1000
     
     # Labels to condition the model with (feel free to change):
     class_labels = [207, 360, 387, 974, 88, 979, 417, 279]
-        
-    # Create sampling noise:
+    
     n = len(class_labels)
     y = torch.tensor(class_labels, device=device)
     
     bs = y.shape[0]
-    # Setup classifier-free guidance:
+    
     start_time = time()
-
     samples = model.generate_with_cfg(cond=y, max_new_tokens=latent_size ** 2, cond_padding=args.cls_token_num, num_iter=args.num_sample_iter,
                     out_dim=bae.codebook_size, cfg_scale=args.cfg_scale, cfg_schedule=args.cfg_schedule,
                     gumbel_temp=args.gumbel_temp, gumbel_schedule=args.gumbel_schedule, sample_logits=True, proj_emb=None)
@@ -90,7 +88,7 @@ def main(args, args_ae):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="GPT-L")
+    parser.add_argument("--model", type=str, default="BiGR-L")
     parser.add_argument("--image-size", type=int, choices=[256, 512], default=256)
     parser.add_argument("--num-classes", type=int, default=1000)
     parser.add_argument("--ckpt", type=str, default=None,
