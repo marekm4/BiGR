@@ -3,6 +3,7 @@
 [![Project Page](https://img.shields.io/badge/Webpage-0054a6?logo=Google%20chrome&logoColor=white)](https://haoosz.github.io/BiGR/)
 [![arXiv](https://img.shields.io/badge/arXiv-2410.14672%20-b31b1b)](https://arxiv.org/abs/2410.14672)
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BiGR-blue)](https://huggingface.co/haoosz/BiGR)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haoosz/BiGR/blob/main/run_BiGR.ipynb)
 ![License](https://img.shields.io/github/license/haoosz/ConceptExpress?color=lightgray)
 
 This is the official PyTorch code for the paper:
@@ -20,7 +21,7 @@ This is the official PyTorch code for the paper:
 <sup>3</sup>Intellifusion &nbsp; <sup>4</sup>The Chinese University of Hong Kong  
 (\*: Project lead; &dagger;: Corresponding authors)
 
-[[**project page**](https://haoosz.github.io/BiGR/)] [[**arXiv**](https://arxiv.org/abs/2410.14672)]
+[[**Project page**](https://haoosz.github.io/BiGR/)] [[**arXiv**](https://arxiv.org/abs/2410.14672)] [[**Colab**](https://colab.research.google.com/github/haoosz/BiGR/blob/main/run_BiGR.ipynb)]
 
 <p align="left">
     <img src='src/teaser.png' width="90%">
