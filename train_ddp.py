@@ -26,7 +26,7 @@ import os
 from llama.gpt import BIGR_models
 from sample import sample_func
 from torchvision.utils import save_image
-from bae.binaryae import BinaryGAN, BinaryAutoEncoder, load_pretrain
+from bae.binaryae import BinaryAutoEncoder, load_pretrain
 from hparams import get_vqgan_hparams
 from data import ImageNetPrepareBAEDataset
 import torch._dynamo
