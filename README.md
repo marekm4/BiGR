@@ -1,13 +1,13 @@
 # BiGR: Harnessing Binary Latent Codes for Image Generation and Improved Visual Representation Capabilities
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2407.07077%20-b31b1b)]() -->
 [![Project Page](https://img.shields.io/badge/Webpage-0054a6?logo=Google%20chrome&logoColor=white)](https://haoosz.github.io/BiGR/)
+[![arXiv](https://img.shields.io/badge/arXiv-2410.14672%20-b31b1b)](https://arxiv.org/abs/2410.14672)
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BiGR-blue)](https://huggingface.co/haoosz/BiGR)
 ![License](https://img.shields.io/github/license/haoosz/ConceptExpress?color=lightgray)
 
 This is the official PyTorch code for the paper:
 
-[**BiGR: Harnessing Binary Latent Codes for Image Generation and Improved Visual Representation Capabilities**]()  
+[**BiGR: Harnessing Binary Latent Codes for Image Generation and Improved Visual Representation Capabilities**](https://arxiv.org/abs/2410.14672)  
 [Shaozhe Hao](https://haoosz.github.io/)<sup>1</sup>, 
 [Xuantong Liu](https://openreview.net/profile?id=~Xuantong_LIU1)<sup>2</sup>, 
 [Xianbiao Qi](https://scholar.google.com.hk/citations?user=odjSydQAAAAJ&hl=en)<sup>3</sup>\*, 
@@ -20,7 +20,7 @@ This is the official PyTorch code for the paper:
 <sup>3</sup>Intellifusion &nbsp; <sup>4</sup>The Chinese University of Hong Kong  
 (\*: Project lead; &dagger;: Corresponding authors)
 
-[**Project page**](https://haoosz.github.io/BiGR/) | [**arXiv**]()
+[**Project page**](https://haoosz.github.io/BiGR/) | [**arXiv**](https://arxiv.org/abs/2410.14672)
 
 <p align="left">
     <img src='src/teaser.png' width="90%">
@@ -150,4 +150,12 @@ We train L/XL-sized models using 8 A800 GPUs and XXL-sized models using 32 A800 
 ## 💐 Acknowledgement
 This project builds on [Diffusion Transformer](https://github.com/facebookresearch/DiT), [Binary Latent Diffusion](https://github.com/ZeWang95/BinaryLatentDiffusion), and [LlamaGen](https://github.com/FoundationVision/LlamaGen). We thank these great works!
 
-<!-- ## 📖 Citation -->
+## 📖 Citation
+If you use this code in your research, please consider citing our paper:
+```
+@misc{hao2024bigr,
+    title={Bi{GR}: Harnessing Binary Latent Codes for Image Generation and Improved Visual Representation Capabilities}, 
+    author={Shaozhe Hao and Xuantong Liu and Xianbiao Qi and Shihao Zhao and Bojia Zi and Rong Xiao and Kai Han and Kwan-Yee~K. Wong},
+    year={2024},
+}
+```
