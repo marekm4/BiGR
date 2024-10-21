@@ -20,7 +20,7 @@ This is the official PyTorch code for the paper:
 <sup>3</sup>Intellifusion &nbsp; <sup>4</sup>The Chinese University of Hong Kong  
 (\*: Project lead; &dagger;: Corresponding authors)
 
-[**Project page**](https://haoosz.github.io/BiGR/) | [**arXiv**](https://arxiv.org/abs/2410.14672)
+[[**project page**](https://haoosz.github.io/BiGR/)] [[**arXiv**](https://arxiv.org/abs/2410.14672)]
 
 <p align="left">
     <img src='src/teaser.png' width="90%">
