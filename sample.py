@@ -12,7 +12,7 @@ from time import time
 from glob import glob
 
 from hparams import get_vqgan_hparams
-from bae.binaryae import BinaryGAN, BinaryAutoEncoder, load_pretrain
+from bae.binaryae import BinaryAutoEncoder, load_pretrain
 from llama.load_bigr import load_bigr
 
 def sample_func(model, bae, save, args, seed=0, image_size=256, num_classes=1000):
