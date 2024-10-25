@@ -29,6 +29,9 @@ This is the official PyTorch code for the paper:
 
 **TL;DR**: We introduce BiGR, a novel conditional image generation model using compact binary latent codes for generative training, focusing on enhancing both generation and representation capabilities.
 
+## 📢 News
+🌟 We are training BiGR with [REPA](https://github.com/sihyun-yu/REPA), a representation alignment regularization that enhances both generation and representation performance in [DiT](https://github.com/facebookresearch/DiT)/[SiT](https://github.com/willisma/SiT).
+
 ## ⚙️ Setup
 You can simply install the environment with the file `environment.yml` by:
 ```
