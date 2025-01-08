@@ -16,7 +16,7 @@ from utils.log_utils import log
 import torch.distributed as dist
 
 def load_pretrain(model, pretrain_path):
-    ae_state_dict = torch.load(pretrain_path, weights_only=True)
+    ae_state_dict = torch.load(pretrain_path, weights_only=True, map_location=torch.device('cpu'))
     
     state_dict_new = {}
     for k, v in ae_state_dict.items():
@@ -302,7 +302,7 @@ class Generator(nn.Module):
                             nn.Conv2d(block_in_ch, block_in_ch, kernel_size=3, stride=1, padding=1),
                             nn.ReLU(),
                             nn.Conv2d(block_in_ch, H.n_channels, kernel_size=1, stride=1, padding=0)
-                        ).cuda()
+                        )
 
     def forward(self, x):
         for block in self.blocks:

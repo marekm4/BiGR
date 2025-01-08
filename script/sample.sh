@@ -4,7 +4,7 @@ CKPT_BAE=ckpts/bae/bae_d24/binaryae_ema_1000000.th
 CKPT_BIGR=ckpts/gpt/bigr_L_d24.pt
 # sample hparams
 CFG=3.0
-ITER=20
+ITER=1
 GUMBEL=0.01
 # sample script
 python sample.py \
