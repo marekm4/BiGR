@@ -1,0 +1,6 @@
+timm
+diffusers
+accelerate
+einops
+scipy
+opencv-python

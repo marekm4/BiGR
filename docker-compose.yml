@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./ckpts:/app/ckpts
+      - ./samples:/app/samples
