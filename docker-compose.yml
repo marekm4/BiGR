@@ -2,5 +2,6 @@ services:
   app:
     build: .
     volumes:
+      - ./:/app
       - ./ckpts:/app/ckpts
       - ./samples:/app/samples
